@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include('../partials/head') %>
+</head>
+<body>
+  <%- include('../partials/nav') %>
+
+  <div class="contact contact-index">
+    <h2>Index</h2>
+    <ul>
+      <% contacts.forEach((contact) => { %>
+        <li>
+          <!-- show action(/contacts/:id)과 연결  -->
+          <a href="/contacts/<%= contact._id %>"><%= contact.name %></a>
+        </li>
+      <% }) %>
+    </ul>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+</head>
+<body>
+  <%- include('../partials/nav') %>
+
+  <div class="contact contact-new">
+    <h2>New</h2>    
+    <form action="/contacts" method="post" class="contact-form">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" value="">
+      </div>
+      <div>
+        <label for="emial">Email</label>
+        <input type="text" name="email" id="email" value="">
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" value="">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
